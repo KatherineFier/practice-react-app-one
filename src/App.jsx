@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react'
+import {GlobalStyle} from './styles'
 
-function App() {
-  return (
+
+const App = () => {
+    const message = (name) => {
+      return `${name} is my dog.`
+    }
+  
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle/>
+      <h1>Hello there!</h1>
+      <h2>{message`Lio`}</h2>
     </div>
-  );
+  )
 }
 
 export default App;
