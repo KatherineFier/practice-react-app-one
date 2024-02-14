@@ -30,7 +30,8 @@ position: relative;
 height: 600px;
 width: 400px;
 `
-export const Wrapper = styled.section `display: flex;
+export const Wrapper = styled.section `
+    display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
