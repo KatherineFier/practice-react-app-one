@@ -1,9 +1,10 @@
 import React from 'react'
 import {Image} from './styles'
 
-const ImgBox = () => {
+const ImgBox = ({x,y}) => {
+  console.log(x)
   return (
-    <Image/>
+    <Image $initialX={x} $initialY={y}/>
   )
 }
 
