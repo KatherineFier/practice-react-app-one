@@ -42,9 +42,13 @@ position: relative;
 height: 600px;
 width: 400px;
 `
-export const Wrapper = styled.section `
+export const Wrapper = styled.section.attrs(({$color}) =>({
+  style: {
+    backgroundColor:`hsl(${$color}, 69%, 77%)`
+  }
+}))`
     display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-width: 100vw;`
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;`
